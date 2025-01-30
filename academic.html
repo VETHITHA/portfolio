@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Yazhini S</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            background-image: url("https://t3.ftcdn.net/jpg/00/73/08/22/360_F_73082224_ay4Tus31QNHNmGSIty53ZE6mBrBc47cV.jpg");
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color:silver;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            justify-content: center;
+            gap: 20px; /* Adds space between the boxes */
+            padding: 20px;
+        }
+
+        .box {
+            background-color:silver;
+            border-radius: 6px;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeUp 1.5s forwards;
+            border-radius: 0%;
+        }
+
+        .box img {
+            width: 150px;
+            height: 150px;
+            animation: bounceIn 2s ease-out;
+        }
+
+        /* Box Hover Effect */
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Keyframes for Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+     <br><br>
+    <h1>TECHNICAL SKILLS</h1>
+
+    <div class="container">
+        <div class="box"><br>
+            <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png?f=webp&w=256" alt="HTML Logo">
+        </div>
+        <div class="box"><br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAp7qsjXPsV3Ug1CYFg4I5GFdsCqR5kQsO6g&s" alt="CSS Logo">
+        </div>
+        
+        <div class="box"><br>
+            <img src="https://png.pngtree.com/element_our/sm/20180627/sm_5b33460f04516.jpg" alt="JavaScript Logo">
+        </div>
+        <div class="box"><br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1a0WBC7gzH2m5vruS5y6ITiFyhgd4-2iPIw&s" alt="React Logo">
+        </div>
+        <div class="box"><br>
+            <img src="https://banner2.cleanpng.com/20181128/cbr/kisspng-python-programming-basics-for-absolute-beginners-michigan-python-user-group-5-jul-2-18-1713916787253.webp" alt="Node.js Logo">
+        </div>
+    </div>
+
+</body>
+</html>
